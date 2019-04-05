@@ -6,6 +6,7 @@ W3school内容总结
 <head>  
   <title>Document</title>
   <meta charset="UTF-8" />
+  <link  .../>
 </head>
 <body>
 </body>
@@ -33,13 +34,54 @@ attribute: src width height
 tag:br
 水平线标签
 tag:hr
+定义图像地图
+tag:map	
+定义图像地图中的可点击区域
+tag:area
+表格
+tag:table
+    <table>
+    <caption></caption>
+    <tr>
+        <th></th>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+    </table>
 
-
-三.HTML样式 style
+三.HTML样式 
+style 属性:
 background-color 背景颜色
 font-family      字体
 color            颜色
 font-size        字体大小
 text-align       文本对齐
+text-decoration  无下划线文本
+分类：
+外部样式表：
+tag：link
+attribute：rel="stylesheet" type="text/css" href="..."
+内部样式表：
+<head>
+    <style type="text/css">
+        body {background-color: red}
+        p {margin-left: 20px}
+    </style>
+</head>
+内联样式：
+<标签 style="...">
 
+
+四.HTML 计算机代码
+键盘格式
+kbd
+样式格式
+samp
+代码格式
+code
+变量格式化
+var
+定义预格式化文本
+pre
 

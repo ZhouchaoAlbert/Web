@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>hi，htmlday2</title>
+    <!--内部样式-->
+     <style>
+     #tips{
+        color: blue;
+        font-size: 20px;
+        margin: 0,40%,0,40%;
+        background-color: bisque;
+        width: 400;
+        text-align: center
+     }
+     </style>
+     <!--外部样式-->
+     <link rel="stylesheet" type="text/css" href="htmlday2.css"/>
+</head>
+<!--
+  样式学习：内部样式 外部样式 内联样式
+--->
+<body>
+  <p id="tips"> html 内部样式学习 </p>
+  <h1>html 外部样式学习 </h1>
+   <!--内联样式-->
+  <h2 style="color:blueviolet">html 内联样式学习</h2>
+
+  <!--图片链接-->
+  <a href="http://www.baidu.com">
+    <img width="200" height="200" src="https://i1.mifile.cn/f/i/2019/redmi7/sec1.jpg"/>
+  </a>
+  <br />
+  <!--新建页面-->
+  <a href="http://www.w3school.com.cn/" target="_blank">
+    Visit W3School!
+  </a>
+  <br />
+  <a href="#tips">返回上面</a>
+  <!--可点击区域的图像映射-->
+  <img  usemap="#planetmap" width="200" height="200" src="https://i1.mifile.cn/f/i/2019/redmi7/sec1.jpg"/>
+  <map name="planetmap" id="planetmap">
+    <area shape="circle" coords="40,40,40" href="http://www.w3school.com.cn/" target="_blank" />
+  </map>
+  <!--表格学习-->
+  <table  border="1" cellspacing="0" >
+   <tr>
+       <th>姓名</th>
+       <th>电话</th>
+       <th>地址</th>
+   </tr>
+   <tr>
+        <td>小黄</td>
+        <td>11111111111</td>
+        <td>深圳</td>
+    </tr>
+    <tr>
+        <td rowspan="2">小红</td>
+        <td>22222222222</td>
+        <td>惠州</td>
+    </tr>
+    <tr>
+        <td>33333333333</td>
+        <td>广州</td>
+    </tr>
+  </table>
+  <!--表格中的标签-->
+  <table border="1" style="background:red">
+    <tr>
+        <td>
+            <p>这是一个段落</p>
+            <p>这是另一个段落</p>
+        </td>
+        <td>
+            这个单元格包含表格：
+            <table border="1">
+                <tr> <td>A</td> <td>B</td> </tr>
+                <tr> <td>C</td> <td>D</td> </tr>
+            </table>  
+        </td>
+    </tr>
+    <tr>
+        这个单元格包含列表：
+        <td>
+            <ul>
+                <li>苹果</li>
+                <li>香蕉</li>
+                <li>菠萝</li>
+            </ul> 
+        </td>
+         <td>
+              HELLO  
+        </td>
+        </tr>
+  </table>
+
+</body>
