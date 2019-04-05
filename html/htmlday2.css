@@ -1,5 +1,34 @@
 
 
-h1{
+#test_style{
     background: red;
+}
+
+#header
+{
+   background-color: black;
+   text-align: center;
+   color: white;
+   padding:5px 0 5px 0;
+}
+
+#nav{
+    float: left;
+    background-color: #eeeeee;
+    height: 300px;
+    width:100px;
+    line-height: 30px;
+    padding: 5px;
+}
+
+#section{
+    padding: 10px 0px 0px 200px;
+}
+
+#footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding:5px 0 5px 0;
+    clear:both;
 }
