@@ -85,3 +85,8 @@ var
 定义预格式化文本
 pre
 
+
+五.HTML 框架
+框架标签        frame
+框架结构标签    frameset
+内联框架        iframe
