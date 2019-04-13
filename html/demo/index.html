@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>证件</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            font-family: "microsoft yahei"; 
+        }
+       .mainpage {
+           padding-top: 20px;
+        background-color: #F6FbFF;
+        width: 650px;
+        height: 288px;
+        margin: 100px auto;
+       }
+
+       .mainpage  label {
+        display: block;
+        height: 35px;
+        width:  650px;
+       }
+
+       .mainpage label .head {
+        height: 34px;
+        width: 200px;
+        line-height: 34px;
+        border-top: 1px solid #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        text-align: center;
+        background-color: #E6E6E6;
+        display: inline-block;
+       }
+
+       .mainpage label .tail {
+        height: 34px;
+        width: 440px;
+        border-top: 1px solid #E6E6E6;
+        line-height:34px;
+        background-color: #F6FBFF;
+        padding-left: 5px;
+        display: inline-block;
+       }
+       input {
+        width: 430px;
+        height: 20px;
+        margin-right: auto;
+        margin-left: auto;
+       }
+       h1 {
+           text-align: center;
+           height: 30px;
+           font-size: 18px;
+       }
+       .test {
+        position:absolute;
+        width:200px;
+        height:200px;
+        z-index:1;
+        left: 550px;
+        top: 250px;
+     }
+    </style>
+    </head>
+    <body>
+     <div class="mainpage">
+         <h1>证照(复批)信息</h1>
+         <label><span class="head">证照编码</span><span class="tail"><input type="text" /></span></label>
+         <label><span class="head">证照名称</span><span class="tail"><input type="text" /></span></label>
+         <label><span class="head">机构名称</span><span class="tail"><input  type="text" /></span></label>
+         <label><span class="head">法定代表人(申请人)姓名</span><span class="tail"><input type="text"></span></label>
+         <label><span class="head">证照有效期</span><span class="tail"><input type="text"></span></label>
+         <label><span class="head">发证单位</span><span class="tail"><input type="text"></span></label>
+         <label><span class="head">颁发时间</span><span class="tail"><input type="text"></span></label>
+         <div class="test">
+              <img width="100" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555095084706&di=9ac6375399c7ed9599549fd36fc23a1c&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F12%2F42%2F40%2F47b2OOOPICfe.jpg" />
+         </div>
+    </div>
+      
+    </body>
+</html>
