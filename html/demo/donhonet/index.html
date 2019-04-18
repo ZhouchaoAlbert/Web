@@ -4,6 +4,10 @@
     <meta charset="UTF-8"/>
     <title>东浩</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         .header {
             height: 70px;
             background-color: #C8251E ;
@@ -14,13 +18,54 @@
             margin: 0 auto;
             background-color: #C8251E ;
         }
-        .logo img {
+        .header_nav .logo {
             height: 70px;
-            width:  159px;
-            display: inline-block;
+            float: left;
+            margin-right: 50px;
+        }
+
+        .header_nav ul {
+            list-style: none;
         }
         .header_nav li {
+            display: inline; 
+            border-right: 1px solid #D2625E;
+            float: left;
+        }
+        .header_nav li:first-child {
+            border-left: 1px solid #D2625E;
+        }
+
+        .header_nav li a {
             display: inline-block;
+            height: 70px;
+            width: 96px;
+            line-height: 70px;
+            text-align: center;
+            color: #FFF;
+            background-color: #C8251E;
+            text-decoration: none;
+        }
+        .header_nav li a:hover {
+            background-color: #414141;
+        }
+  
+        .header_nav  span{
+            height: 70px;
+            width: 100px;
+            line-height: 70px;
+            color:#FFF;
+            text-align: center;
+            display: inline-block;
+            float: left;
+        }
+        .header_nav  .tel{
+            width:  24px;
+            height: 24px;
+            margin-left: 50px;
+            margin-top: 23px;
+            display: inline-block;
+            float: left;
         }
     </style>
 </head>
@@ -29,20 +74,20 @@
 <body>
     <header class="header">
         <div class="header_nav">
-            <div clsss="logo">
-                <img src="images/index_02.png" />
-            </div>
+            
+            <img class="logo" src="images/index_02.png" />
+
             <ul>
-                <li>2</li>
-                <li>2</li>
-                <li>2</li>
-                <li>2</li>
-                <li>2</li>
-                <li>2</li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">走进东浩</a></li>
+                <li><a href="#">服务项目</a></li>
+                <li><a href="#">客户案例</a></li>
+                <li><a href="#">新闻动态</a></li>
+                <li><a href="#">联系我们</a></li>
             </ul>
-            <div>
-                3
-            </div>
+           
+            <img class="tel" src="images/index_05.png" />  
+            <span>15724107727</span> 
         </div>
     </header>
 </body>
