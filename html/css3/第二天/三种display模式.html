@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        background-color: pink;
+        height: 100px;
+        width: 200px;
+    }
+    span {
+        background-color:hotpink;
+        width: 100px;  /*行内元素设置高宽无效*/
+        height: 100px;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    input {
+        background-color: deeppink;
+        height: 100px;
+        width: 200px;
+        margin: 100px 100px;
+    }
+    </style>
+</head>
+<!--
+1.块级标签显示模式
+    特点：
+    一总从新的一行开始
+    二可以设置高宽、内外边距、边框
+    三可以容纳其他行内元素和其他块元素
+    四宽度默认是容器的100%
+
+2.行内标签显示模式
+    一总是和相邻元素在同一行
+    二高宽设置无效 内外边距垂直无效、水平可设置
+    三只能在行内元素中放文本或者其他行内元素（a特殊）
+    四默认高宽就是本身的高宽
+
+3.行内块标签显示模式
+
+-->
+<body>
+    <!--块级标签模式显示-->
+    <div>111111</div>
+    <p>222222</p>
+    <div>333333</div>
+    <p>444444</p>
+    <div>
+        <div>
+            5555555
+        </div>
+        <p>6666666</p>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <hr />
+    <!--行内标签模式显示-->
+    <span>aaaaaaa</span>
+    <span>bbbbbbb</span>
+    <span>ccccccc</span>
+    <span>ddddddd</span>
+    <span>eeeeeee</span>
+    <br/>
+    <hr />
+    <!--行内块标签模式显示-->
+    <input type="text" />
+</body>
+</html>
