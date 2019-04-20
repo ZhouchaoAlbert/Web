@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    div {
+        color: pink;
+    }
+    .cross {
+        color: hotpink;
+    }
+    div.cross {
+        font-size: 16px;
+    }   
+    h1,h2,h3 {
+        color:deeppink;
+    }
+    .houdai span {  /*可以选择 儿子 孙子 重孙子.. */
+        color: blue;
+    }
+    .nav li {
+        color: blueviolet;
+    } 
+    .nav > li { /*子元素选择器  只改变亲儿子的颜色*/
+        color:red;
+    }
+
+    a[title] {
+        color: red;
+    }
+    input[type=text] {
+        color:red;
+    }
+    p::first-letter {
+        color:red;
+        font-size: 50px;
+    }
+    p::first-line {
+        color: pink;
+    }
+    p::selection {
+        color: pink;
+		font-size: 50px;
+		background-color: blue;  
+    }
+    </style>
+</head>
+
+<!--
+选择器有以下几种：
+1.交集选择器
+2.并集选择器
+3.后代选择器
+4.子元素选择器
+5.属性选择器
+6.伪元素选择器
+::first-letter  选择第一个字
+::first-line    选择第一行
+::selection     当我们选中文字的时候，可以变化的样式(只能是字体颜色与背景颜色)
+-->
+<body>
+    <div class="cross">交集选择器1</div>
+    <p class="cross">交集选择器2</p>
+
+    <h1>并集选择器</h1>
+    <h2>并集选择器2</h2>
+    <h3>并集选择器3</h3>
+    <div class="houdai">
+        <span>后代选择器</span> 
+    </div>
+    <ul class="nav">
+        <li>
+            一级菜单
+            <ul>
+                <li> 二级菜单</li>
+                <li> 二级菜单</li>
+            </ul>
+        </li>
+        <li>
+            一级菜单
+            <ul>
+                <li> 二级菜单</li>
+              <li> 二级菜单</li>
+            </ul>
+        </li>
+        <li>
+            一级菜单
+            <ul>
+                <li> 二级菜单</li>
+                <li> 二级菜单</li>
+            </ul>
+        </li>
+    </ul>
+
+    <a href="#" title="111111">111111111111</a>
+    <a href="#" title="222222" >22222222222</a>
+    <a href="#" >333333333</a> 
+    <input type="text">
+    <input type="text">
+    <input type="tel">
+    <input type="password">
+    <!--伪元素选择器-->
+    <p>英语词汇，一般指即兴的、随性的随意的发挥，例如HIPHOP说唱中的freestyle就是即兴说唱的意思。2017年6月，因吴亦凡屡次提起而火遍网络。
+            吴亦凡爆红的freestyle，其实是嘻哈选手的基本功，也是《中国有嘻哈》节目中的一个环节名称。
+        发展经过编辑
+        从吴亦凡口里说出来，freestyle就变得很魔性了，因为他见人都会问一句，你有freestyle吗？两个选手难以选择，还是这句，“你们有freestyle吗”？</p>
+</body>
+</html>
