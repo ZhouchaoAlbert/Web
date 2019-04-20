@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    .father{
+        width: 600px;
+        background-color: red;
+        /* 加overflow */
+        /* overflow: hidden; */
+    }
+    .son1 {
+        width: 200px;
+        height: 300px;
+        background-color: black;
+        float: left;
+    }
+    .son2 {
+        width: 200px;
+        height: 300px;
+        background-color: blue;
+        float: left;
+    }
+
+    /*课外标签法*/
+    /* .clear{
+        clear: both;
+    } */
+
+    /* after伪元素法 */
+    /* .clearfix::after {
+        display: block;
+        content: ".";
+        visibility: hidden;
+        height: 0;
+        clear: both;   
+     }
+     .clearfix {
+         *zoom:1;
+     } */
+
+     /* 双伪元素选择器 */
+     .clearfix::before,.clearfix::after {
+         content: "";
+         display: table;
+     }
+     .clearfix::after {
+         clear: both;
+     }
+     .clearfix {
+         *zoom:1;
+     }
+
+    .brother {
+        width: 600px;
+        height: 800px;
+        background-color: hotpink;
+    }
+
+    </style>
+</head>
+<!--
+清除浮动
+1.额外标签
+2.给父元素家overflow
+3.伪元素after
+4.双伪元素
+-->
+<body>
+    <div class="father clearfix">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <!-- <div class="clear"></div> -->
+    </div>
+     <div class="brother">   
+     </div>
+</body>
+</html>
