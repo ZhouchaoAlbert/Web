@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    //1.Number
+    var str = "hello world";
+    var isRight = true;
+   
+    console.log(Number(str));
+    console.log(Number(isRight));
+    console.log(Number('1234'));
+    console.log(Number('1234qw'));
+    //2.parseInt
+    console.log(parseInt(str));      //NaN
+    console.log(parseInt(isRight));  //NaN
+    console.log(parseInt('112233'));
+    console.log(parseInt('112233qq'));
+    console.log(parseInt('qq112233')); //NaN
+    //3.parseFloat
+    console.log(parseFloat(str));      //NaN
+    console.log(parseFloat(isRight));  //NaN
+    console.log(parseFloat('1111.333133'));  
+    console.log(parseFloat('1111.333133qqq'));  
+    //4.+ -
+    
+    //5.Boolean
+    //转换成false的情况：null  undefined  ''空字符串  0 NaN
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
