@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    //生成 min 到 max 之间的随机数 
+    function getRandom(min,max) {
+       return Math.floor(Math.random() * (max - min + 1) + min);   //[min,max]
+    }
+    console.log(getRandom(1,10));
+    //获取最大最小值
+    console.log(Math.max(24,44,2412,21,421412,442,4251,1251,535));
+    console.log(Math.min(24,44,2412,21,421412,442,4251,1251,535));
+
+    var d = new Date;
+    console.log(d.toString());
+    console.log(d.getFullYear());
+    console.log(d.getMonth() + 1);
+    console.log(d.getDate());
+    console.log(d.getHours());
+    console.log(d.getMinutes());
+    console.log(d.getSeconds());
+    </script>
+</head>
+<!--
+Math
+Date
+
+-->
+<body>
+    
+</body>
+</html>
