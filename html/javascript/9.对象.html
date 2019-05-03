@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+    var student = {
+        name: 'zhouchao',
+        age: 18,
+        sex: '男',
+        sayHi:function() {
+            console.log('hello');
+        }
+    }
+    console.log(student.name);
+    console.log(student.age);
+    console.log(student.sex);
+    student.sayHi();
+    //遍历对象
+    for (key in student) {
+        console.log(key + ':',student[key]);
+    }
+    //删除对象属性
+    delete student.sex;
+    console.log(student);
+    </script>
+</head>
+<!--
+ 如何创建一个对象，如何使用对象的成员
+ 对象：属性和方法 
+ 函数和对象有什么区别
+ 函数 - 可以封装一段代码
+ 对象 - 封装一组属性和方法
+
+万物皆对象，一切事物都是对象. 对象是一个具体的事物
+对象：特征  名词 描述这个对象的  和行为 动词
+ 
+如何访问对象的属性
+obj.name
+obj['name']
+
+遍历对象的成员
+for in 
+
+创建对象的方法
+1.字面量创建
+2.new Object创建
+3.工厂方法
+4.自定义构造函数创建 （帕斯卡命名）
+
+new 的执行过程
+1 在内存中创建了一个空的对象
+2 让构造函数中的this指向刚刚创建的对象
+3 执行构造函数，在构造函数中设置属性和方法（当然也可以做其它事情）
+4 返回了当前对象
+-->
+<body>
+    
+</body>
+</html>
