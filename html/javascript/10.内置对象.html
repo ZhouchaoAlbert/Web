@@ -7,6 +7,7 @@
     <title>Document</title>
 
     <script>
+    //Math
     //生成 min 到 max 之间的随机数 
     function getRandom(min,max) {
        return Math.floor(Math.random() * (max - min + 1) + min);   //[min,max]
@@ -15,7 +16,7 @@
     //获取最大最小值
     console.log(Math.max(24,44,2412,21,421412,442,4251,1251,535));
     console.log(Math.min(24,44,2412,21,421412,442,4251,1251,535));
-
+    //Date
     var d = new Date;
     console.log(d.toString());
     console.log(d.getFullYear());
@@ -24,12 +25,62 @@
     console.log(d.getHours());
     console.log(d.getMinutes());
     console.log(d.getSeconds());
+    //Array
+    var nums =[11,23,23,41,5,416,73];
+    if (nums instanceof Array) {
+        console.log('nums 是数组'); 
+    } else {
+        console.log('nums 不是数组'); 
+    }
+    console.log(nums.toString());  //字符串
+    console.log(nums.valueOf());   //对象本身
+    console.log(nums.length); 
+    nums.push(1111);
+    console.log(nums); 
+    console.log(nums.length);
+    console.log(nums.pop()); 
+    console.log(nums); 
+    console.log(nums.length);
+    console.log(nums.shift()); 
+    console.log(nums); 
+    console.log(nums.length);
+    console.log(nums.unshift(31414));
+    console.log(nums); 
+    console.log(nums.reverse()); 
+    nums.sort(function(a,b) {
+        return b -a;
+    })
+    console.log(nums); 
+    nums.filter(function(item) {
+        return item < 50;
+    })
+    console.log(nums); 
+    var arr = ['c', 'a', 'z', 'a', 'x', 'a'];
+    var index = 0;
+    do {
+        index = arr.indexOf('a',index + 1);
+        if (index !== -1) {
+            console.log(index); 
+        }
+    } while(index !== -1)
+
+ 
     </script>
 </head>
 <!--
 Math
 Date
-
+Array
+    1 栈操作(先进后出)
+    push()
+    pop()     //取出数组中的最后一项，修改length属性
+    2 队列操作(先进先出)
+    push()
+    shift()   //取出数组中的第一个元素，修改length属性
+    unshift()   //在数组最前面插入项，返回数组的长度
+    3 排序方法
+    reverse() //翻转数组
+    sort();   //即使是数组sort也是根据字符，从小到大排序
 -->
 <body>
     
