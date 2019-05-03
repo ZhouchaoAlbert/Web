@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    // 获取 i 到 j 的和
+    function getSum (i,j) {
+        var sum = 0;
+        for (var n = i; n <= j;n++) {
+            sum += n;
+        }
+        return sum;
+    }
+    console.log(getSum(1,4));
+
+    var funcSum = function(i,j) {
+        var sum = 0;
+        for (var n = i; n <= j;n++) {
+            sum += n;
+        }
+        return sum;
+    }
+    console.log(funcSum(1,6));
+    //判断一个数是否是素数(又叫质数，只能被1和自身整数的数)
+    function isPrimeNumber(number) {
+        var isPrime = true;
+        for (var i  = 2; i < number; i++) {
+            if(number % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        return isPrime;
+    }
+    console.log(isPrimeNumber(10));
+    
+    </script>
+</head>
+<!--
+函数定义两种方式
+1.函数声明
+function 函数名 {
+ 函数体
+}
+
+2.函数表达式
+var func = function() { 
+
+}
+-->
+<body>
+    
+</body>
+</html>
