@@ -1,0 +1,26 @@
+
+/*板新*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    height: 80px;
+    background-color: #020000;
+}
+
+.w-center
+{
+    width: 1190px;
+    margin: 0px auto;
+}
+
+.q-nav
+{
+    height: 30px;
+    background-color: #E3E4E5;
+}
