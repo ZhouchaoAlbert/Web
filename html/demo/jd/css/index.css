@@ -6,6 +6,15 @@
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
+
+input,button {
+	border: 0;
+	outline: none;  /* 取消轮廓边框 */
+}
+
 .float_l {
     float: left;
 }
@@ -41,9 +50,7 @@ a {
     color:#999;
 }
 
-ul {
-    list-style: none;
-}
+
 /*画小竖线*/
 .space {
     width: 1px;
@@ -86,4 +93,55 @@ color: #f10215;
 
 ul li a:hover {
 	color: #c81623;
+}
+
+/*中间部分*/
+.middle {
+    height: 140px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top:-30px;
+    box-shadow: 0px -10px 5px rgba(0,0,0,.3);
+}
+.logo a {
+    height: 170px;
+    width: 190px;
+    display: block;
+    background-image:url(../images/logo.png);
+    background-color: #fff;
+}
+
+.search {
+	width: 550px;
+	height: 35px;
+	position: absolute;
+	top:  25px;
+	left: 320px;
+}
+
+.search input {
+    width: 488px;
+    height: 33px;
+    border: 1px solid #f10215;
+    float: left;
+    font-size: 16px;
+    padding-left:10px;
+}
+
+
+.search button {
+	width: 50px;
+	height: 35px;
+	background-color: #f10215;
+	float: left;
+}
+
+.iconfont-search {
+    font-family: "iconfont"!important;
+    font-size: 16px;
+    font-style: normal;
+    color: #fff;
 }
