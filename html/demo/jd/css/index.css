@@ -44,6 +44,18 @@ header {
     float: left;
 }
 
+.mobile {
+    position: relative;
+}
+
+.mobile img {
+    position: absolute;
+	left: -10px;
+	top: 24px;
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+
 a {
     text-decoration:none; /*取消下划线*/
     font-size: 12px;
@@ -91,7 +103,7 @@ color: #f10215;
     color:#f00;
 }
 
-ul li a:hover {
+a:hover {
 	color: #c81623;
 }
 
@@ -144,4 +156,76 @@ ul li a:hover {
     font-size: 16px;
     font-style: normal;
     color: #fff;
+}
+
+.shopping-car {
+    width: 180px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top:25px;
+    right: 95px;
+    background-color: #fff;
+    text-align: center;
+    color: #f10215;
+}
+
+.iconfont-shopcar {
+    font-family: "iconfont"!important;
+    font-size: 16px;
+    font-style: normal;
+    color: #f10215;
+}
+.shopping-car span {
+    width: 20px;
+    height: 20px;
+    background-color: #f10215;
+    border-radius: 50%;
+    position: absolute;
+    line-height: 20px;
+    font-size: 14px;
+    color:#fff;
+    margin-top: 7px;
+    margin-left:  6px;
+}
+
+.keyword {
+    position: absolute;
+	top: 68px;
+	left: 320px;
+}
+
+.nav-items {
+    width: 770px;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+	line-height: 40px;
+}
+
+.nav-items li {
+    float: left;
+    margin-left: 30px; 
+}
+
+.nav-items li a {
+	font-size: 16px;
+	font-weight: 700; 
+	color: #555;
+}
+
+.nav-items li a:hover {
+	color: #f10215;
+}
+
+.nav-items .space {
+	margin:15px -15px 0 15px;
+}
+
+.super {
+    position: absolute;
+    bottom: 0px; 
+    right: 0px; 
 }
