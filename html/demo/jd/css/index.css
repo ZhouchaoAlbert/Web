@@ -229,3 +229,56 @@ a:hover {
     bottom: 0px; 
     right: 0px; 
 }
+
+.grid {
+    height: 480px;
+}
+
+.grid-col-1 {
+    position: relative;
+    width: 190px;
+    height: 100%;
+    background-color: #6e6568;
+    color: #fff;
+    font-size: 14px;  /* 不是给字的，给 /  */
+}
+
+.ad {
+    position: absolute;
+    left: -250px;
+}
+
+.ad-r {
+    position: absolute;
+    top: 0px;
+    left: 258px;
+    background-image: url(../images/ad-r.jpg);
+    z-index: 1000;
+    height: 480px;
+    width: 0px;
+    transition:  all 0.8s;
+}
+
+.ad:hover .ad-r {
+    width: 900px;
+}
+
+.grid-col-1  a{
+    color: #fff;
+	font-size: 14px;  
+	margin: 0 3px;
+}
+
+.grid-col-1 ul {
+	padding: 10px 0;
+}
+
+.grid-col-1 li {
+	padding-left: 12px;
+	height: 29px;
+	line-height: 26px;
+}
+
+.grid-col-1 li:hover {
+     background-color: #9c9698;
+}
