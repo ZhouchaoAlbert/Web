@@ -1,6 +1,12 @@
 
 /*板新*/
 
+img {
+	/* display: block; */
+	vertical-align: top; /* 解决图片底测有空白缝隙的问题 */
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -282,3 +288,74 @@ a:hover {
 .grid-col-1 li:hover {
      background-color: #9c9698;
 }
+
+.grid-col-2  
+{    
+    width: 790px;
+	height: 100%;
+	margin-left: 10px;
+}
+
+ .grid-col-2-top  {
+    position: relative;
+ }
+ 
+ .arrow-l {
+    width: 30px;
+    height: 60px; 
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    left: 0px;
+    background-color: rgba(0,0,0,.3);
+    color:white;
+    text-align: center;
+    line-height: 60px;
+    transform:translateY(-50%);
+ }
+
+ .arrow-r {
+    width: 30px;
+    height: 60px; 
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    right:0px;
+    background-color: rgba(0,0,0,.3);
+    color:white;
+    text-align: center;
+    line-height: 60px;
+    transform:translateY(-50%);
+ }
+
+ .grid-col-2-top ul {
+	width: 167px;
+	height: 20px;
+    background: rgba(255, 255, 255, .3);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform:translateX(-50%);
+    border-radius: 10px;
+    padding-left: 8px;
+ }
+
+ .grid-col-2-top li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+    float: left;
+    border-radius: 50%;
+    margin: 4px;
+    cursor: pointer;
+ }
+
+ .grid-col-2-bottom div {
+    float: left;
+     margin-top: 10px; 
+ }
+
+ .grid-col-2-bottom div:last-child {
+    float: right;
+    margin-top: 10px;
+ }
