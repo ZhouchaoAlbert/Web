@@ -547,3 +547,50 @@ footer a {
 	font-weight: 700;
 	margin-left: 82px;
 }
+
+.help {
+    height: 220px;
+    border-bottom: 1px solid #DEDEDE;
+    padding-top: 25px;
+	box-sizing: border-box;
+}
+
+.help dl {
+    float: left;
+    width: 192px;
+}
+
+.help  dt {
+    height: 30px;
+	font-size: 14px;
+	color: #666;
+}
+
+.help  dd {   
+    height: 22px;
+}
+
+.cover {
+    width: 200px;
+	height: 150px;
+	background: url(../images/ico_footer.png) no-repeat;
+}
+
+.cover h5 {
+	padding-left: 35px;
+}
+
+
+.cover p {
+	font-size: 12px;
+	color: #666;
+	line-height: 18px;
+	width: 180px;
+}
+
+.cover a {
+	display: block;
+	margin-top: 5px;
+	width: 180px;
+	text-align: right;
+}
